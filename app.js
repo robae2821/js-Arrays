@@ -93,33 +93,23 @@ console.log(donutTypes.indexOf('Glazed'));
 donutTypes.splice(2, 0, "Lemon", "Kiwi");
 console.log(donutTypes);
 //11 **Create a new variable called withSyed and set it equal to the people array concatenated with the string of "Bob".
+// let donutTypes = donuts;
+// let withSyed = "Bob";
 
-// const withSyed = [];
-// withSyed[0] = 'Robel';
-// withSyed[1] = 'Emily';
-// withSyed[2] = 'Anthony';
-// withSyed[3] = 'Arone';
-// withSyed[4] = 'luz';
-// withSyed[5] = 'Anna';
-// withSyed[6] = 'Ali';
-// withSyed[7] = 'Chirs';
-// withSyed[8] = 'April';
-// withSyed[9] = 'Shelby';
+// withSyed = donutTypes.concat("Bob");
 // console.log(withSyed);
+let donuts = "lime zest, Glazed, choclate "
+let withSyed = "Aaron, Robel, and Julie,"
 
-// let str1 = withSyed;
-// let str2 = donutTypes;
-// let donuts = str1.concat(str2);
-// var withSyed = donuts.concat ("Bob");
-
-
-// console.log(donuts.concat("Bob"));
+withSyed = withSyed.concat(donuts, "Bob")
+console.log(withSyed);
+// "I'm going to the store with Aaron, Robel, and Julie!"
 
 
 
-//12 **Create a function called getdonuts() that will display all the donuts in your array and display on your page.
+// //12 **Create a function called getdonuts() that will display all the donuts in your array and display on your page.
 function getdonuts() {
-    document.getElementById("donuts").innerHTML = donuts;
+    document.getElementById("donuts").innerHTML = withSyed;
 
 }
 getdonuts()
